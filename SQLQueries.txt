@@ -1,0 +1,19 @@
+CREATE DATABASE CLINIC_MANAGEMENT;
+CREATE TABLE treatment (
+  patient_id int(11) DEFAULT NULL,
+  formula_no varchar(50) DEFAULT NULL,
+  formula varchar(500) DEFAULT NULL,
+  complaints varchar(10000) DEFAULT NULL,
+  prescription varchar(1000) DEFAULT NULL,
+  No_of_days varchar(5) DEFAULT NULL,
+  Date varchar(100) DEFAULT NULL,
+  pulse_reading varchar(50) DEFAULT NULL,
+  amount_paid varchar(25) DEFAULT NULL
+)
+CREATE TABLE patient_info (  patient_ID int(11) NOT NULL AUTO_INCREMENT,  patient_name varchar(100) DEFAULT NULL,  patient_known_case varchar(10000) DEFAULT NULL,  patient_age varchar(3) DEFAULT NULL,  patient_gender varchar(100) DEFAULT NULL,  patient_mobile_number varchar(10) DEFAULT NULL,  PRIMARY KEY (patient_ID),  UNIQUE KEY Mobile_no_unique (patient_mobile_number)) ;
+CREATE TABLE photo (
+  patient_id int(11) DEFAULT NULL,
+ photo_ID int(11) NOT NULL AUTO_INCREMENT,
+  photo longblob,
+  PRIMARY KEY (photo_ID)
+);

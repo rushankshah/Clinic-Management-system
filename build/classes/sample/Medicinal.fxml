@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Medicinal">
+   <content>
+      <AnchorPane prefHeight="899.0" prefWidth="1379.0" style="-fx-background-color: #D2E3F5;">
+         <children>
+            <HBox alignment="CENTER" layoutX="-1.0" layoutY="7.0" prefHeight="486.0" prefWidth="1381.0">
+               <children>
+                  <TableView fx:id="formulaTable" prefHeight="486.0" prefWidth="1317.0" style="-fx-border-color: black;">
+                    <columns>
+                      <TableColumn fx:id="formulaNumberColumn" prefWidth="99.0" text="Formula no." />
+                      <TableColumn fx:id="formulaColumn" prefWidth="171.0" text="Formula" />
+                        <TableColumn fx:id="numberOfDaysColumn" prefWidth="92.0" text="No. of days" />
+                        <TableColumn fx:id="dateColumn" prefWidth="149.0" text="Date" />
+                        <TableColumn fx:id="pulseReadingColumn" prefWidth="109.0" text="Pulse reading" />
+                        <TableColumn fx:id="complaintsColumn" prefWidth="379.0" text="Complaints" />
+                        <TableColumn fx:id="prescriptionsColumn" prefWidth="154.0" text="Prescription" />
+                        <TableColumn fx:id="amountPaidColumn" prefWidth="145.0" text="Amount" />
+                    </columns>
+                  </TableView>
+               </children>
+            </HBox>
+            <HBox layoutX="27.0" layoutY="500.0" prefHeight="124.0" prefWidth="1324.0" spacing="10.0">
+               <children>
+                  <TextField fx:id="formulaNumber" prefHeight="26.0" prefWidth="116.0" promptText="Formula no." />
+                  <TextField fx:id="formula" promptText="Formula" />
+                  <TextField fx:id="numberOfDays" prefHeight="26.0" prefWidth="110.0" promptText="No. of days" />
+                  <TextField fx:id="date" prefHeight="26.0" prefWidth="123.0" promptText="Date" />
+                  <TextField fx:id="pulseReading" prefHeight="26.0" prefWidth="131.0" promptText="Pulse Reading" />
+                  <TextArea fx:id="complaints" prefHeight="124.0" prefWidth="416.0" promptText="Enter the complaints here" />
+                  <TextArea fx:id="prescriptions" prefHeight="175.0" prefWidth="147.0" promptText="Enter the Prescription here" />
+                  <TextField fx:id="amountPaid" prefHeight="26.0" prefWidth="180.0" promptText="Enter the amount here" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="14.0" layoutY="709.0" prefHeight="189.0" prefWidth="1137.0" spacing="50.0">
+               <children>
+                  <Button fx:id="addButton" mnemonicParsing="false" onAction="#addButtonPushed" opacity="0.7" prefHeight="26.0" prefWidth="213.0" text="Add" />
+                  <Button fx:id="backButton" mnemonicParsing="false" onAction="#backButtonPushed" opacity="0.7" prefHeight="26.0" prefWidth="186.0" text="Back" />
+                  <Button fx:id="homePageButton" mnemonicParsing="false" onAction="#homeButtonPushed" opacity="0.7" prefHeight="26.0" prefWidth="291.0" text="Go to Home Page" />
+                  <Button fx:id="print" mnemonicParsing="false" onAction="#printButtonPushed" opacity="0.7" prefHeight="26.0" prefWidth="205.0" text="Print" />
+                  <Label fx:id="nameLabel" prefHeight="16.0" prefWidth="283.0" text="Patient Name">
+                     <font>
+                        <Font name="DejaVu Sans Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="errorLabel" prefHeight="18.0" prefWidth="241.0" />
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+   </content>
+</ScrollPane>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="Clinic Management System.jnlp">
+  <information>
+    <title>Clinic Management System</title>
+    <vendor>Rushank Shah</vendor>
+    <description>null</description>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="lib\com.mysql.jdbc_5.1.5.jar" size="676712" download="eager" />
+    <jar href="lib\commons-logging-1.2.jar" size="61829" download="eager" />
+    <jar href="lib\fontbox-2.0.17.jar" size="1558957" download="eager" />
+    <jar href="lib\pdfbox-2.0.17.jar" size="2690978" download="eager" />
+    <jar href="lib\pdfbox-debugger-2.0.17.jar" size="249157" download="eager" />
+    <jar href="lib\pdfbox-tools-2.0.17.jar" size="80660" download="eager" />
+    <jar href="lib\preflight-2.0.17.jar" size="247731" download="eager" />
+    <jar href="lib\xmpbox-2.0.17.jar" size="132175" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="Clinic Management System" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="sample.Main"  name="Clinic Management System" />
+  <update check="always"/>
+</jnlp>
